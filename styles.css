@@ -18,12 +18,27 @@ body {
   display: flex;
 }
 
+@media only screen and (max-device-width: 900px) {
+  .conteiner {
+    width: 600px;
+    display: block;
+  }
+}
+
 .perfil {
   height: 100%;
   width: 25%;
   border-right: 0, 1px solid black;
   box-shadow: 0.1px 0px 9px rgb(80, 8, 8);
   background: linear-gradient(30deg, #65ffcc, #ffff, #02f1fe7a);
+}
+
+@media only screen and (max-device-width: 900px) {
+  .perfil {
+    width: 100%;
+    height: 70%;
+    box-shadow: none;
+  }
 }
 
 .fotoUser {
@@ -33,6 +48,7 @@ body {
   justify-content: center;
   margin: auto;
 }
+
 
 .UserPic {
   height: 70%;
@@ -96,16 +112,40 @@ p {
 .tecnologias {
   height: 100%;
   width: 75%;
-  background-color: aquamarine;
 }
 
 .projetos {
   height: 30%;
-  background-color: azure;
-  margin: 20px ;
+  border: 2px solid aqua;
+  margin: 20px;
   border-radius: 15px;
 }
 
 .projetos h3 {
   padding: 5px;
+  height: 20%;
+}
+
+.cardProjetos {
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  margin:0 auto;
+}
+
+.card img {
+  height: 70%;
+}
+
+.card:hover {
+  transition: ease-in-out .1s;
+  width: 110px;
+  height: 110px;
 }
